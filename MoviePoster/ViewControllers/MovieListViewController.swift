@@ -7,25 +7,19 @@
 
 import UIKit
 
-
 class MovieListViewController: UITableViewController {
     
-    
     var movies: [Movie]?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData(from: MovieUrl.moviesapi.rawValue)
     }
 
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies?.count ?? 0
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieId", for: indexPath) as! TableViewCell
         let result = movies?[indexPath.row]

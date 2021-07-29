@@ -14,18 +14,16 @@ class TableViewCell: UITableViewCell {
             movieImage.layer.cornerRadius = 15
         }
     }
+    
     @IBOutlet var movieNameLabel: UILabel!
     @IBOutlet var movieYearLabel: UILabel!
     @IBOutlet var movieGenreLabel: UILabel!
     
-
     func configure(with movie: Movie?) {
         movieNameLabel.text = movie?.name
         movieYearLabel.text = "Год производства: \(movie?.year ?? 0)"
         movieGenreLabel.text = "Жанр: \(movie?.genre ?? "")"
         movieImage.fetchImage(from: movie?.image ?? "")
         
-
     }
-
 }

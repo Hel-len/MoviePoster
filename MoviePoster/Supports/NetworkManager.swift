@@ -20,20 +20,18 @@ class NetworkManager {
                 print(error)
                 return
             }
-            
             guard let data = data else { return }
             
             do {
-                
                 let movies = try JSONDecoder().decode([Movie].self, from: data)
                 DispatchQueue.main.async {
                     complition(movies)
                 }
+                
             } catch let error {
                 print(error)
             }
         }.resume()
-        
     }
 }
 
@@ -52,7 +50,6 @@ class ImageManager {
             DispatchQueue.main.async {
                 complition(data, response)
             }
-
         }.resume()
     }
 }

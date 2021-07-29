@@ -5,8 +5,8 @@
 //  Created by Елена Дранкина on 02.05.2021.
 //
 
-
 struct Movie: Decodable {
+    
     let id: Int?
     let name: String?
     let genre: String?

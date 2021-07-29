@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BF63F38D263EF78E00E88C0A /* Storyboards */,
-				BF63F38B263EF76100E88C0A /* Helper */,
+				BF63F38B263EF76100E88C0A /* Supports */,
 				BF63F389263EF73800E88C0A /* Model */,
 				BF63F38A263EF74C00E88C0A /* ViewControllers */,
 				BFA27F002645E13100B07377 /* Views */,
@@ -92,7 +92,7 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		BF63F38B263EF76100E88C0A /* Helper */ = {
+		BF63F38B263EF76100E88C0A /* Supports */ = {
 			isa = PBXGroup;
 			children = (
 				BF63F382263EF70900E88C0A /* Info.plist */,
@@ -101,7 +101,7 @@
 				BF63F376263EF70600E88C0A /* SceneDelegate.swift */,
 				BFA27EF22645AEC300B07377 /* NetworkManager.swift */,
 			);
-			path = Helper;
+			path = Supports;
 			sourceTree = "<group>";
 		};
 		BF63F38D263EF78E00E88C0A /* Storyboards */ = {
@@ -347,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoviePoster/Helper/Info.plist;
+				INFOPLIST_FILE = MoviePoster/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoviePoster/Helper/Info.plist;
+				INFOPLIST_FILE = MoviePoster/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

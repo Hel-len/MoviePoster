@@ -43,7 +43,6 @@ class MovieViewController: UIViewController {
         directorLabel.text = "Режиссер: \(openedMovie?.director ?? "")"
         castLabel.text = "В ролях: \(openedMovie?.cast ?? "")"
         descriptionLabel.text = openedMovie?.description ?? ""
-        
     }
     
     private func findTheMovie(movies: [Movie], with id: Int) {
@@ -53,7 +52,6 @@ class MovieViewController: UIViewController {
             }
         }
     }
-    
 }
 
 

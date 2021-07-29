@@ -8,9 +8,11 @@
 import UIKit
 
 class MovieImageView: UIImageView {
+    
     func fetchImage(from url: String) {
         guard let imageURL = URL(string: url) else {
             image = UIImage(systemName: "xmark.shield")
+            
             return
         }
         
